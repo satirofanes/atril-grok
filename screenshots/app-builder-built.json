@@ -1,0 +1,38 @@
+{
+  "url": "http://127.0.0.1:8081/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Atril",
+      "hasCanvas": false,
+      "bodyTextLen": 2803,
+      "bodyTextHash": "9de07e9fa33dcb7f2b4de9ec8ea6760584091fceac18cd19fa2ff358a8072fc4",
+      "bodyTextPrefix": "Atril Cuaderno del río falso.html Puntero 100% Grosor del trazo ",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-built.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Atril",
+      "hasCanvas": false,
+      "bodyTextLen": 2765,
+      "bodyTextHash": "68e81fe41920242d1ef360d49c3737779a5545cdd05645969550b371b7282c4e",
+      "bodyTextPrefix": "Atril Cuaderno del río falso.html Cuaderno del río falso Informe",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-built-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-built.json",
+  "divergesFromBaseline": false,
+  "baselineReasons": []
+}

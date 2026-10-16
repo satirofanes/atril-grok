@@ -1,0 +1,185 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Figtree", "Segoe UI", sans-serif;
+  --font-serif: "Newsreader", Georgia, "Times New Roman", serif;
+
+  --color-wall: #e4dcd0;
+  --color-folio: #fbf8f2;
+  --color-paper: #f3efe6;
+  --color-ink: #1c1915;
+  --color-ink-soft: #3a342c;
+  --color-muted: #6f675e;
+  --color-line: #d4cbbf;
+  --color-wax: #8f2d2d;
+  --color-wax-soft: #f4e6e3;
+
+  --shadow-folio: 0 1px 0 #d4cbbf, 0 18px 40px rgb(28 25 21 / 0.08);
+
+  --spacing-rail: 4.5rem;
+  --spacing-gutter: 15rem;
+  --spacing-sheet: 85dvh;
+}
+
+@layer base {
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+
+  html,
+  body {
+    background: var(--color-wall);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+  }
+
+  ::selection {
+    background: #e6b32566;
+    color: var(--color-ink);
+  }
+}
+
+.folio-html {
+  font-family: var(--font-serif);
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: var(--color-ink);
+}
+
+.folio-html h1 {
+  font-size: 2.25rem;
+  font-weight: 560;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+  margin: 0 0 1rem;
+}
+
+.folio-html h2 {
+  font-size: 1.5rem;
+  font-weight: 560;
+  line-height: 1.25;
+  margin: 1.75rem 0 0.6rem;
+}
+
+.folio-html h3 {
+  font-size: 1.25rem;
+  line-height: 1.3;
+  margin: 1.25rem 0 0.4rem;
+}
+
+.folio-html p,
+.folio-html ul,
+.folio-html ol,
+.folio-html blockquote,
+.folio-html pre {
+  margin: 0.8rem 0;
+}
+
+.folio-html ul,
+.folio-html ol {
+  padding-left: 1.25rem;
+}
+
+.folio-html ul {
+  list-style: disc;
+}
+
+.folio-html ol {
+  list-style: decimal;
+}
+
+.folio-html a {
+  color: var(--color-wax);
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
+.folio-html blockquote {
+  border-left: 2px solid var(--color-wax);
+  color: var(--color-ink-soft);
+  padding-left: 0.9rem;
+}
+
+.folio-html code {
+  font-family: var(--font-sans);
+  font-size: 0.85em;
+  background: var(--color-paper);
+  padding: 0.05em 0.3em;
+}
+
+.folio-html img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 1rem 0;
+}
+
+.folio-html table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: var(--font-sans);
+  font-size: 0.875rem;
+  line-height: 1.4;
+}
+
+.folio-html th,
+.folio-html td {
+  border: 1px solid var(--color-line);
+  padding: 0.4rem 0.55rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+.folio-html th {
+  background: var(--color-paper);
+  font-weight: 600;
+}
+
+::highlight(atril-amber) {
+  background-color: #e6b3258c;
+  color: var(--color-ink);
+}
+
+::highlight(atril-rose) {
+  background-color: #e39aafb0;
+  color: var(--color-ink);
+}
+
+::highlight(atril-moss) {
+  background-color: #7dbe6ab0;
+  color: var(--color-ink);
+}
+
+.print-only {
+  display: none;
+}
+
+@media print {
+  .print-only {
+    display: block;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+
+  .shell,
+  .reader {
+    height: auto !important;
+    overflow: visible !important;
+  }
+
+  body {
+    background: white !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

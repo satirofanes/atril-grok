@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="Atril">
+  <rect width="32" height="32" rx="7" fill="#F3EFE6"/>
+  <path fill="#1C1915" fill-rule="evenodd" d="M13.6 3.4 21.6 22.2h-3.55l-1.45-3.7H10.4l-1.45 3.7H5.4L13.6 3.4Zm-1.55 10.5h3.1L13.6 10.1l-1.55 3.8Z"/>
+  <circle cx="27" cy="27" r="3.2" fill="#8F2D2D"/>
+</svg>
